@@ -62,7 +62,7 @@ function buildToDo(todo, index) {
   let toDoText = document.createElement("span")
   toDoText.innerHTML = todo.description;
   toDoText.id = index;
-  if(todo.description === true){
+  if(todo.complete === true){
     toDoText.classList.add("completeText")
   }
   toDoShell.appendChild(toDoText);
