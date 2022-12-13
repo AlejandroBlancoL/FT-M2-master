@@ -1,8 +1,17 @@
 import React from 'react';
+import styled from 'styled-components'
 
 
-const DivButtons = 'DivButtons'
-const Buttons = 'Buttons'
+const DivButtons = styled.div`
+  display: "flex";
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+`;
+const Buttons = styled.div`
+  border-radius: 5px;
+  color: beige;
+`;
 
 export default class Botones extends React.Component {
   render () {
