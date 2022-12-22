@@ -2,10 +2,14 @@ import React from "react";
 import logo from "../../assets/logo.png";
 import logoHenry from "../../assets/logo-henry.png";
 import styleNav from "./NavBar.module.css";
+import { NavLink } from 'react-router-dom'
 
 export default function NavBar() {
   return (
     <div className={styleNav.container}>
+      <NavLink to='/'/>
+      <NavLink to="/shipping"/>
+      <NavLink to="/promotions"/>
       <ul className={styleNav.menu}>
         <li>
           <img src={logoHenry} alt="logo-henry" />
