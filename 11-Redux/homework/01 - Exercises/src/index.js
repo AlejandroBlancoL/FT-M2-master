@@ -3,7 +3,8 @@ const contador = require("./reducer");
 const { incremento, decremento } = require("./actions");
 
 // En esta línea creamos nuestro store. Pasándole como parámetro nuestro Reducer
-var store;
+// var store;
+function store(Reducer);
 
 // Obtenemos el elemento con el id `valor`.
 var valor;
